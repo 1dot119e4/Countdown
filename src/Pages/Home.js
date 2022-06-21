@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import Card from "../components/Card";
 import customData from "../data.json";
 
 function Home() {
+  const currentTimestamp = Date.now();
   const cards = customData.data;
 
   return (
@@ -11,7 +13,8 @@ function Home() {
           <Card
             key={card.id}
             title={card.title}
-            timestamp={+new Date(card.doDate)}
+            doDateTimestamp={Date.parse(card.doDate)}
+            currentTimestapm={currentTimestamp}
             message={card.message}
           />
         ))}

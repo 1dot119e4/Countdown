@@ -3,10 +3,6 @@ import customData from "../data.json";
 
 function Home() {
   const cards = customData.data;
-  // data[0].title
-  console.log(customData.data);
-  const title = "TITLE";
-  const myDate = "2022-07-01";
 
   return (
     <div className="container flex-column">

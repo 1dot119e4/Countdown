@@ -12,13 +12,17 @@ const defaultRemainingTime = {
 const CountdownTimer = ({ countdownTimestampMs }) => {
   const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
 
+  const date = new Date();
+  const timeZoneOffset = date.getTimezoneOffset() * 60000;
+  let timestamp = countdownTimestampMs + timeZoneOffset;
+
   useEffect(() => {
     const intervalId = setInterval(() => {
-      updateRemainingTime(countdownTimestampMs);
+      updateRemainingTime(timestamp);
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [countdownTimestampMs]);
+  }, [timestamp]);
 
   function updateRemainingTime(countdown) {
     setRemainingTime(getRemainingTimeUntilMsTimestamp(countdown));

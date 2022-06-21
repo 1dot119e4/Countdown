@@ -3,31 +3,31 @@
     {
       "id": "1",
       "title": "AM_end",
-      "date": "2022-7-1",
+      "doDate": "2022-7-1",
       "message": "Congratulation, you are out of hell"
     },
     {
       "id": "2",
       "title": "CZ_end",
-      "date": "2022-7-1",
+      "doDate": "2022-7-1",
       "message": "Congratulation, you are back 'home'"
     },
     {
       "id": "3",
       "title": "retirement",
-      "date": "2047-09-01",
+      "doDate": "2047-09-01",
       "message": "congrats you are now old"
     },
     {
       "id": "4",
       "title": "Nourish",
-      "date": "2040-09-01",
+      "doDate": "2040-09-01",
       "message": "He can earn money also"
     },
     {
       "id": "5",
       "title": "birthday",
-      "date": "2023-08-01",
+      "doDate": "2023-08-01",
       "message": "Happy birthday!"
     }
   ]

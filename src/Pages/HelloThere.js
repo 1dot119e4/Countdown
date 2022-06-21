@@ -1,17 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 function HelloThere() {
-    return(
-        <div>
-            <Header/>
-            <div>
-            <h1>Some smiling picture</h1>
-            </div>
-            <Footer/>
-        </div>
-    )
+  return (
+    <div>
+      <div>
+        <h1>Some smiling picture</h1>
+      </div>
+    </div>
+  );
 }
 
-export default HelloThere
+export default HelloThere;

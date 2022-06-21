@@ -25,9 +25,4 @@ function ConditionalTimeRender({ isTimeOut, doDateTimestamp, message }) {
   return <div>{message}</div>;
 }
 
-// function TimeRender(isTimeOut, message, doDateTimestamp) {
-//   if (isTimeOut) return <div className="countdown-timer">{message}</div>;
-//   return <CountdownTimer countdownTimestampMs={doDateTimestamp} />;
-// }
-
 export default Card;
